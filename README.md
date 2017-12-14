@@ -23,7 +23,7 @@ prefer (yarn)[https://yarnpkg.com] as a default package manager, which is nice a
 
 #### Coding Style
 
-- stick to ES6
+- use ES6
 - 2 space indentation
 - no ending semicolons unless you will die otherwise
 - prefer Promise/await/async to callbacks
@@ -31,4 +31,4 @@ prefer (yarn)[https://yarnpkg.com] as a default package manager, which is nice a
 
 ### Python
 
-- stick to Python3
+- use Python3 mainly for embracing our unicode friend

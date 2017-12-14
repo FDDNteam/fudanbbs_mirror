@@ -1,0 +1,14 @@
+{
+  "name": "fudanbbs_mirror",
+  "version": "1.0.0",
+  "description": "fudan bbs crawler and things",
+  "main": "index.js",
+  "repository": "git@github.com:FDDNteam/fudanbbs_mirror.git",
+  "author": "dragonly <liyilongko@gmail.com>",
+  "license": "GPL-3.0",
+  "scripts": {},
+  "dependencies": {
+    "mongodb": "^3.0.0-rc0",
+    "puppeteer": "^0.13.0"
+  }
+}
