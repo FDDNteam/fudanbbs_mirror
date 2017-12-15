@@ -1,34 +1,41 @@
-# Conventions
+# 复旦bbs mirror项目
 
-This project is started small, and do not turn down any kind of improvement as long as enough votes are present for it.
-
-Initial proposed components:
-
-- An incremental crawler in nodejs
-- A web UI for basic reading and full-text search
+这个项目一开始仅致力于爬复旦bbs的数据, 并提供一些格式转换脚本方便处理源数据, 之后可能会进一步发展出别的目的
 
 
-Future components:
+初始提议实现的模块:
 
-- helper functions for NLP analysis on the dataset (in python as you data guys like?)
+- incremental的nodejs爬虫, 使用mongodb做持久化存储
+- 支持全文搜索的web界面
+- 常用的原始数据格式转换脚本, 方便做不同目的的NLP等任务
 
 
-## Coding
+可能下一步要做的:
+
+暂无, 欢迎提issue
+
+
+## Coding Convention
 
 ### NodeJS
 
 #### Package Manager
 
-prefer (yarn)[https://yarnpkg.com] as a default package manager, which is nice and neat
+使用[yarn](https://yarnpkg.com)而不是npm作为包管理器
 
 #### Coding Style
 
-- use ES6
-- 2 space indentation
-- no ending semicolons unless you will die otherwise
-- prefer Promise/await/async to callbacks
+- 使用ES6
+- 2个空格缩进
+- 除非不用会死, 不要用`;` (话说有时候不在行首加个`;`真的就会死...)
+- 使用Promise/await/async而非callback, 如果某个库只提供callback的api, 那么封装成Promise再用
 
 
 ### Python
 
-- use Python3 mainly for embracing our unicode friend
+- 使用python3来忘记unicode的烦恼
+
+
+## Issues
+
+- puppeteer会从googleapi.com下载chromium, 如果被墙请设置NPM_HTTP_PROXY, NPM_HTTPS_PROXY环境变量, 或者连接vpn. 如果直接执行`get_headless_chromium_location.js`可以获得chromium下载链接和应该解压到的path

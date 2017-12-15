@@ -8,7 +8,9 @@
   "license": "GPL-3.0",
   "scripts": {},
   "dependencies": {
+    "debug": "^3.1.0",
     "mongodb": "^3.0.0-rc0",
-    "puppeteer": "^0.13.0"
+    "puppeteer": "^0.13.0",
+    "supports-color": "^5.1.0"
   }
 }
