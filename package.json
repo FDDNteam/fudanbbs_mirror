@@ -6,7 +6,9 @@
   "repository": "git@github.com:FDDNteam/fudanbbs_mirror.git",
   "author": "dragonly <liyilongko@gmail.com>",
   "license": "GPL-3.0",
-  "scripts": {},
+  "scripts": {
+    "start": "DEBUG=crawler:* node index.js"
+  },
   "dependencies": {
     "debug": "^3.1.0",
     "mongodb": "^3.0.0-rc0",
