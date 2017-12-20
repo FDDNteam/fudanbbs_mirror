@@ -12,7 +12,7 @@ const Crawler = require('./lib/crawler')
   let boards = await crawler.getAllBoards()
   // TODO: parallelism
   for (let board of boards) {
-    await crawler.updateBoardByName(board.name)
+    await crawler.updateBoardByName(board)
   }
 
   await browser.close()
