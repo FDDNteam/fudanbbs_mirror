@@ -12,7 +12,16 @@
 
 可能下一步要做的:
 
-暂无, 欢迎提issue
+- one-master-multi-slave 架构的简单分布式爬虫系统, 理论故障单点在master
+
+
+## Dependencies
+
+### Ubuntu/Debian
+
+```bash
+sudo apt install libxcomposite1 libxcursor1 libxdamage1 libxi6 libxtst6 libfontconfig1 libxss1 libxrandr libxrandr2 libgconf-2-4 libasound2 libpangocairo-1.0-0 libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0
+```
 
 
 ## Coding Convention
